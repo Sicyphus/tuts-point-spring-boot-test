@@ -16,17 +16,14 @@ public class MockitoDemoApplicationTests {
  
  @Autowired 
  private OrderService orderService; 
- 
-Spring Boot        
-265 
+
  
  @Autowired 
  private ProductService productService; 
  
  @Test 
  public void whenUserIdIsProvided_thenRetrievedNameIsCorrect() { 
-  Mockito.when(productService.getProductName()).thenReturn("Mock 
-Product Name"); 
+  Mockito.when(productService.getProductName()).thenReturn("Mock Product Name"); 
   String testName = orderService.getProductName(); 
   Assert.assertEquals("Mock Product Name", testName); 
  } 

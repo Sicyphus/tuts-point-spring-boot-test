@@ -1,4 +1,4 @@
-package com.tutorialspoint.mockitodemo; 
+package com.tutorialspoint.mockitodemo.service; 
 import org.springframework.stereotype.Service; 
 @Service 
 public class ProductService { 

@@ -1,3 +1,3 @@
-com\example\demo\DemoApplication.class
-com\example\demo\controller\ConsumeWebService.class
-com\example\demo\model\Product.class
+com\tutorialspoint\mockitodemo\service\ProductService.class
+com\tutorialspoint\mockitodemo\MockitoDemoApplication.class
+com\tutorialspoint\mockitodemo\service\OrderService.class
