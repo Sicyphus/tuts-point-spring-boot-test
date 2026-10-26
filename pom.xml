@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>  
+<?xml version="1.0" encoding="UTF-8"?> 
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
@@ -6,29 +6,40 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
  <modelVersion>4.0.0</modelVersion> 
  
  <groupId>com.tutorialspoint</groupId> 
- <artifactId>demo</artifactId> 
+ <artifactId>mockito-demo</artifactId> 
  <version>0.0.1-SNAPSHOT</version> 
  <packaging>jar</packaging> 
- <name>demo</name> 
+ 
+ <name>mockito-demo</name> 
  <description>Demo project for Spring Boot</description> 
  
  <parent> 
   <groupId>org.springframework.boot</groupId> 
   <artifactId>spring-boot-starter-parent</artifactId> 
-  <version>1.5.8.RELEASE</version> 
-  <relativePath/>  
+  <version>1.5.9.RELEASE</version> 
+  <relativePath /> <!-- lookup parent from repository --> 
  </parent> 
  
  <properties> 
+Spring Boot        
+266 
+ 
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
-  <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> 
+  <project.reporting.outputEncoding>UTF
+8</project.reporting.outputEncoding> 
   <java.version>1.8</java.version> 
  </properties> 
  
  <dependencies> 
   <dependency> 
    <groupId>org.springframework.boot</groupId> 
-   <artifactId>spring-boot-starter-web</artifactId> 
+   <artifactId>spring-boot-starter</artifactId> 
+  </dependency> 
+ 
+  <dependency> 
+   <groupId>org.mockito</groupId> 
+   <artifactId>mockito-core</artifactId> 
+   <version>2.13.0</version> 
   </dependency> 
  
   <dependency> 
@@ -36,34 +47,15 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
    <artifactId>spring-boot-starter-test</artifactId> 
    <scope>test</scope> 
   </dependency> 
-
-  <dependency> 
- <groupId>org.mockito</groupId> 
- <artifactId>mockito-core</artifactId> 
- <version>2.13.0</version> 
-</dependency> 
-<dependency> 
- <groupId>org.springframework.boot</groupId> 
- <artifactId>spring-boot-starter-test</artifactId> 
- <scope>test</scope> 
-</dependency>
-
  </dependencies> 
+ 
  <build> 
   <plugins> 
    <plugin> 
     <groupId>org.springframework.boot</groupId> 
     <artifactId>spring-boot-maven-plugin</artifactId> 
    </plugin> 
-			<plugin>
-				<artifactId>maven-clean-plugin</artifactId>
-				<version>3.4.0</version> <!-- Use the latest version available -->
-				<configuration>
-					<failOnError>false</failOnError>
-				</configuration>
-			</plugin>
   </plugins> 
  </build> 
- 
  
 </project> 
