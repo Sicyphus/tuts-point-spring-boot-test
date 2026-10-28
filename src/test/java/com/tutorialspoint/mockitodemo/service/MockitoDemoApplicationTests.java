@@ -1,4 +1,4 @@
-package com.tutorialspoint.mockitodemo; 
+package com.tutorialspoint.mockitodemo.service; 
  
 import org.junit.Assert; 
 import org.junit.Test; 
